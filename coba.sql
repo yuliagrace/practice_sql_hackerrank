@@ -88,3 +88,44 @@ WHERE NOT (
     OR CITY LIKE "%o"
     OR CITY LIKE "%u"
 );
+
+### Weather Observation Station 11
+SELECT
+    DISTINCT CITY
+FROM
+    STATION
+WHERE NOT (
+    CITY LIKE "A%"
+    OR CITY LIKE "E%"
+    OR CITY LIKE "I%"
+    OR CITY LIKE "O%"
+    OR CITY LIKE "U%"
+)
+OR NOT (
+    CITY LIKE "%a"
+    OR CITY LIKE "%e"
+    OR CITY LIKE "%i"
+    OR CITY LIKE "%o"
+    OR CITY LIKE "%u"
+);
+
+### Weather Observation Station 12
+SELECT
+    DISTINCT CITY
+FROM
+    STATION
+WHERE NOT (
+    CITY LIKE "A%"
+    OR CITY LIKE "E%"
+    OR CITY LIKE "I%"
+    OR CITY LIKE "O%"
+    OR CITY LIKE "U%"
+)
+AND NOT (
+    CITY LIKE "%a"
+    OR CITY LIKE "%e"
+    OR CITY LIKE "%i"
+    OR CITY LIKE "%o"
+    OR CITY LIKE "%u"
+);
+    
