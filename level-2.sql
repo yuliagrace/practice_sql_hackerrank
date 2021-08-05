@@ -1,7 +1,7 @@
 ### Weather Observation Station 5
 SELECT
-	DISTINCT CITY,
-	LENGTH(CITY)
+		DISTINCT CITY,
+		LENGTH(CITY)
 FROM
     STATION
 ORDER BY
